@@ -1,91 +1,353 @@
-## 个人简历
-多学一点知识，就少写一行代码！！
-#####标签（熟练度依次排列）：  javaScript  、css  、jQuery  、Vue全家桶 、git  、Element  、 Sass  、react  、redux 、 bootstarp  、 gulp
+### 主要特性
 
-###个人信息
+- 支持“标准”Markdown / CommonMark和Github风格的语法，也可变身为代码编辑器；
+- 支持实时预览、图片（跨域）上传、预格式文本/代码/表格插入、代码折叠、搜索替换、只读模式、自定义样式主题和多语言语法高亮等功能；
+- 支持ToC（Table of Contents）、Emoji表情、Task lists、@链接等Markdown扩展语法；
+- 支持TeX科学公式（基于KaTeX）、流程图 Flowchart 和 时序图 Sequence Diagram;
+- 支持识别和解析HTML标签，并且支持自定义过滤标签解析，具有可靠的安全性和几乎无限的扩展性；
+- 支持 AMD / CMD 模块化加载（支持 Require.js & Sea.js），并且支持自定义扩展插件；
+- 兼容主流的浏览器（IE8+）和Zepto.js，且支持iPad等平板设备；
+- 支持自定义主题样式；
 
-姓名  | 联系电话 | 邮箱地址 | 工作年限 | 专  业 | 学  历 | 擅  长
-------------- | ------------- | ------------- | -------------
-李洋  | 18723054887 | 356514033@qq.com | 1.5年 | 软件技术 | 大专 | javaScript
-###工作经历
-- 2017.03 - 至今
-- 四川一品通电子商务有限公司
-- 职责：erp系统基础档案供应商管理模块和批发流程管理模块的开发工作
+# Editor.md
 
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
-- 2015.12 - 2017-01
-- 重庆周游科技有限公司
-- 职责：老网站的维护与迭代、新网站的开发以及迭代
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+
+**目录 (Table of Contents)**
+
+[TOCM]
+
+[TOC]
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+# Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+## Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+### Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+#### Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
+##### Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+###### Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+
+#### 标题（用底线的形式）Heading (underline)
+
+This is an H1
+=============
+
+This is an H2
 -------------
-###项目经验
-#####项目名称：北菜ERP超市管理系统
-#####职责：供应商档案模块和批发管理模块的开发
-#####周期： 2017.03.08 - 至今
-- 技术栈： **Vue全家桶 + Element**
-- 现阶段功能：基础档案、采购管理、批发管理、促销调价、库存管理、权限设置、B2B商品管理等。
 
-我负责的模块是基础档案里面的供应商管理和批发管理。
-项目使用Vue2.0为基础框架，使用vuex来进行状态管理，axios请求数据，Element作为UI框架。供应商档案包括： 供应商信息新增和编辑功能、供应商区域新增和编辑，以及通过供应商编号来添加供应商合同。顺带做了部门档案模块，部门档案只有一个列表和新增编辑。
+### 字符效果和横线等
 
-批发流程：分批发流程和批发退货流程，一个六个功能模块。批发订单可以直接新建，也可以从B2B网站推送过来。新建时，从基础档案的商品选择商品，以及其他信息也是通过弹窗形式选择，数据来源与基础档案。
+----
 
-项目每个模块比较独立，数据基本不会多页面关联，像选择基础档案信息时、数据量很大，多是调用接口。因此，除开登陆的用户信息等数据使用vuex外，数据多是使用回调函数来进行父子组件数据传值。
+~~删除线~~ <s>删除线（开启识别HTML标签时）</s>
+*斜体字*      _斜体字_
+**粗体**  __粗体__
+***粗斜体*** ___粗斜体___
 
-因为是ERP系统的原因，所以不便贴出项目地址。倒是可以在面试时，带上源码
+上标：X<sub>2</sub>，下标：O<sup>2</sup>
 
------------
+**缩写(同HTML的abbr标签)**
 
-#####项目名称： 去约微信端
-#####职责： 负责项目前端开发以及后期维护的所有工作
-#####周期： 2016.08 - 2016-11
-- 技术栈：** 原生JS + Sass + swiper插件 + gulp + Browsersync**
+> 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启
 
-此项目实现和官网同样的功能，同时又占据了大部分的流量。满足用户购买机+酒、航空尾单等产品，同时也具备提需求匹配方案以及其他一些的功能。
+The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.
 
-项目使用原生js开发，由于项目类似于幻灯片交互较多，引入了swpier插件。布局方面使用弹性盒子和rem布局(最开始使用百分比混合媒体查询)。同样使用gulp压缩打包，在gulp中引入Browsersync进行开发调试。
+### 引用 Blockquotes
 
-项目在列表页面引用懒加载方式，避免一次请求大量数据造成页面崩溃。使用了很多CSS3的特性，例如页面转场交互、弹窗交互等。
-项目地址： [去约微信端](http://www.luckytrip.mobile.cn "去约微信端")
+> 引用文本 Blockquotes
 
-------
+引用的行内混合 Blockquotes
 
-#####醒目名称： 去约2.0
-#####职责： 对新官网进行开发，负责所有的前端工作
-#####周期： 2016.05 - 2016-8
-- 技术栈： **jQuery + Sass + gulp + Browsersync**
+> 引用：如果想要插入空白换行`即<br />标签`，在插入处先键入两个以上的空格然后回车即可，[普通链接](http://localhost/)。
 
-去约2.0项目，是对开发一个新的公司网站，除了实现基础的旅游产品购买之外，增加了提需求进行方案匹配的功能，以及会员功能。
-项目使用的是jQuery库来处理数据完成交互、用sass手写样式、使用gulp编译压缩打包。为了完整实现需求，项目中未使用任何插件。
+### 锚点与链接 Links
 
-项目直接放弃IE8，当中引入了H5和CSS3的特性，从而也引发了一些兼容性问题。前期使用过bootstarp作为UI框架，但是由于项目对UI细节要求较高，使用bootstarp需要覆盖或重写的样式太多，这样反而不好维护。
+[普通链接](http://localhost/)
 
-对于数据处理方面，减少请求的一次性数据量，从而避免出现卡顿；渲染时，通过判断数据，减少页面重排。在细节方面，常使用了ES5标准的属性方法，除了IE8及以下，常见的浏览器基本都早已支持ES5。
+[普通链接带标题](http://localhost/ "普通链接带标题")
 
-使用gulp编译压缩sass、合并js进行项目打包。虽然gulp不能想webpack一样打包模块，但是在当时，gulp完全就满足了我们项目的需求，而且配置方式也比较简单。
-项目地址：[去约2.0官网](http:// www.luckytrip.cn "去约2.0官网")
+直接链接：<https://github.com>
 
------
-###凭什么选择我？
-- 软件技术专业。C#、SQL Server 曾是专业课程，虽然现在忘得差不多了；但是我认为，这就像以前学习的语文、数学一样，可能你不记得多少，但是它确确实实对你影响很大。
-- 一年多的独自开发经历。在这期间，进步其实是困难的事情，同样也是这个原因，让我不可能成为“伸手党”，让我拥有了独自、快速定位和解决问题的能力。同时，我这段时间也发现，在工作强度的压力下，我也能保持良好的逻辑。（这条原因不是自夸，而是遇到我现在的同事之后我才发现的）
-- 项目上手快。 在来到现在的公司之前，我只是读过Vue的官方文档，写过一些组件；但是，来公司刚一周便开始上手做项目。（也可能是Vue本身上手就比较快，和我之前对React一套比较熟悉的原因。）
-- 书架上的9本javaScript和相关书籍。对，我就是买来当鸡汤用的，我通读的只有一本《锋利的jQuery》；但是，我还是赖着性子，通读了javaScript权威指南语言核心的所有章节，中间也读过《你不知道的javaScript》和语言精粹。结果就是，仅仅只是这样便让我在工作中有种醍醐灌顶的感觉。
+[锚点链接][anchor-id]
 
------
-    function Me() {
-      this.name = "李洋";
-      this.tel = "18723054887";
+[anchor-id]: http://www.this-anchor-link.com/
+
+GFM a-tail link @pandao
+
+> @pandao
+
+### 多语言代码高亮 Codes
+
+#### 行内代码 Inline code
+
+执行命令：`npm install marked`
+
+#### 缩进风格
+
+即缩进四个空格，也做为实现类似`<pre>`预格式化文本(Preformatted Text)的功能。
+
+    <?php
+        echo "Hello world!";
+    ?>
+
+预格式化文本：
+
+    | First Header  | Second Header |
+    | ------------- | ------------- |
+    | Content Cell  | Content Cell  |
+    | Content Cell  | Content Cell  |
+
+#### JS代码　
+
+```javascript
+function test(){
+	console.log("Hello world!");
+}
+
+(function(){
+    var box = function(){
+        return box.fn.init();
+    };
+
+    box.prototype = box.fn = {
+        init : function(){
+            console.log('box.init()');
+
+			return this;
+        },
+
+		add : function(str){
+			alert("add", str);
+
+			return this;
+		},
+
+		remove : function(str){
+			alert("remove", str);
+
+			return this;
+		}
+    };
+
+    box.fn.init.prototype = box.fn;
+
+    window.box =box;
+})();
+
+var testBox = box();
+testBox.add("jQuery").remove("jQuery");
+```
+
+#### HTML代码 HTML codes
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <mate charest="utf-8" />
+        <title>Hello world!</title>
+    </head>
+    <body>
+        <h1>Hello world!</h1>
+    </body>
+</html>
+```
+
+### 图片 Images
+
+Image:
+
+![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+
+> Follow your heart.
+
+![](https://pandao.github.io/editor.md/examples/images/8.jpg)
+
+> 图为：厦门白城沙滩
+
+图片加链接 (Image + Link)：
+
+[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/examples/images/7.jpg "李健首张专辑《似水流年》封面")
+
+> 图为：李健首张专辑《似水流年》封面
+
+----
+
+### 列表 Lists
+
+#### 无序列表（减号）Unordered Lists (-)
+
+- 列表一
+- 列表二
+- 列表三
+
+#### 无序列表（星号）Unordered Lists (*)
+
+* 列表一
+* 列表二
+* 列表三
+
+#### 无序列表（加号和嵌套）Unordered Lists (+)
+
++ 列表一
++ 列表二
+    + 列表二-1
+    + 列表二-2
+    + 列表二-3
++ 列表三
+    * 列表一
+    * 列表二
+    * 列表三
+
+#### 有序列表 Ordered Lists (-)
+
+1. 第一行
+2. 第二行
+3. 第三行
+
+#### GFM task list
+
+- [x] GFM task list 1
+- [x] GFM task list 2
+- [ ] GFM task list 3
+    - [ ] GFM task list 3-1
+    - [ ] GFM task list 3-2
+    - [ ] GFM task list 3-3
+- [ ] GFM task list 4
+    - [ ] GFM task list 4-1
+    - [ ] GFM task list 4-2
+
+----
+
+### 绘制表格 Tables
+
+| 项目        | 价格   |  数量  |
+| --------   | -----:  | :----:  |
+| 计算机      | $1600   |   5     |
+| 手机        |   $12   |   12   |
+| 管线        |    $1    |  234  |
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+| Function name | Description                    |
+| ------------- | ------------------------------ |
+| `help()`      | Display the help window.       |
+| `destroy()`   | **Destroy your computer!**     |
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
+
+| Item      | Value |
+| --------- | -----:|
+| Computer  | $1600 |
+| Phone     |   $12 |
+| Pipe      |    $1 |
+
+----
+
+#### 特殊符号 HTML Entities Codes
+
+&copy; &  &uml; &trade; &iexcl; &pound;
+&amp; &lt; &gt; &yen; &euro; &reg; &plusmn; &para; &sect; &brvbar; &macr; &laquo; &middot;
+
+X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;
+
+18&ordm;C  &quot;  &apos;
+
+### Emoji表情 :smiley:
+
+> Blockquotes :star:
+
+#### GFM task lists & Emoji & fontAwesome icon emoji & editormd logo emoji :editormd-logo-5x:
+
+- [x] :smiley: @mentions, :smiley: #refs, [links](), **formatting**, and <del>tags</del> supported :editormd-logo:;
+- [x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;
+- [x] [ ] :smiley: this is a complete item :smiley:;
+- [ ] []this is an incomplete item [test link](#) :fa-star: @pandao;
+- [ ] [ ]this is an incomplete item :fa-star: :fa-gear:;
+    - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;
+    - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);
+
+#### 反斜杠 Escape
+
+\*literal asterisks\*
+
+### 科学公式 TeX(KaTeX)
+
+$$E=mc^2$$
+
+行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。
+
+$$\(\sqrt{3x-1}+(1+x)^2\)$$
+
+$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$
+
+多行公式：
+
+```math
+\displaystyle
+\left( \sum\_{k=1}^n a\_k b\_k \right)^2
+\leq
+\left( \sum\_{k=1}^n a\_k^2 \right)
+\left( \sum\_{k=1}^n b\_k^2 \right)
+```
+
+```katex
+\displaystyle
+    \frac{1}{
+        \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
+        \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
+        1+\frac{e^{-6\pi}}
+        {1+\frac{e^{-8\pi}}
+         {1+\cdots} }
+        }
     }
+```
 
-    function phone() {
-      console.log("拨打：" + this.tel +"； 面试！")
-    }
+```latex
+f(x) = \int_{-\infty}^\infty
+    \hat f(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi
+```
 
-    Me.prototype.isGood = function() {phone.call(this, this.tel)}
-    Me.prototype.isBad = function() {console.log("笑一笑！")}
-    var me = new Me();
+### 绘制流程图 Flowchart
 
-	//me.isGood()   or  me.isBad()  ?????
+```flow
+st=>start: 用户登陆
+op=>operation: 登陆操作
+cond=>condition: 登陆成功 Yes or No?
+e=>end: 进入后台
 
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
 
+### 绘制序列图 Sequence Diagram
 
+```seq
+Andrew->China: Says Hello
+Note right of China: China thinks\nabout it
+China-->Andrew: How are you?
+Andrew->>China: I am good thanks!
+```
+
+### End
