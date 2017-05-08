@@ -74,7 +74,7 @@
 -----
     function Me() {
       this.name = "李洋";
-      this.tel = "18723054887"
+      this.tel = "18723054887";
     }
 
     function phone() {
